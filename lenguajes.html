@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguajes - Preferencias</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Preferencias</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="lenguajes.html">Lenguajes</a></li>
+            <li><a href="validacion.html">Validación</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+        </ul>
+    </nav>
+    
+    <hr>
+    
+    <main>
+        <h2>Preferencias de Programación</h2>
+        
+        <form action="#" method="get">
+            <p>
+                <label for="foto">Foto de perfil:</label><br>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </p>
+            
+            <fieldset>
+                <legend>¿Qué lenguajes conoces?</legend>
+                
+                <input type="checkbox" id="html" name="lenguajes" value="html">
+                <label for="html">HTML</label><br>
+                
+                <input type="checkbox" id="css" name="lenguajes" value="css">
+                <label for="css">CSS</label><br>
+                
+                <input type="checkbox" id="javascript" name="lenguajes" value="javascript">
+                <label for="javascript">JavaScript</label><br>
+                
+                <input type="checkbox" id="python" name="lenguajes" value="python">
+                <label for="python">Python</label><br>
+                
+                <input type="checkbox" id="java" name="lenguajes" value="java">
+                <label for="java">Java</label>
+            </fieldset>
+            
+            <br>
+            
+            <p>
+                <label for="horas">¿Cuántas horas de programación estudias al día?</label><br>
+                <input type="number" id="horas" name="horas" min="0" max="24" value="1">
+            </p>
+            
+            <p>
+                <button type="submit">Guardar</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
